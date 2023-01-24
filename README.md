@@ -7,8 +7,8 @@ This template is designed for speedy development of a new Capacitor project that
 - Code formatting with [Prettier](https://prettier.io)
 - Linting with [ESLint](https://eslint.org)
 - Static Types with [TypeScript](https://typescriptlang.org)
-- Native plugins with Capacitor
-- Native UI Styling with Ionic
+- Native plugins with [Capacitor](https://capacitorjs.com/docs)
+- Native UI Styling with [Ionic](https://ionicframework.com/docs/)
 - Additional styling with [Tailwind](https://tailwindcss.com/)
 - State management with [Pinia](https://pinia.vuejs.org/)
 - Routing with [VueRouter](https://router.vuejs.org/)

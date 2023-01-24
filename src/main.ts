@@ -1,13 +1,11 @@
 import { createApp } from 'vue';
 import './css/index.css';
 import App from './App.vue';
-import { createRouter, createWebHashHistory } from 'vue-router';
-import { routes } from './routes';
+import { IonicVue } from '@ionic/vue';
+import router from './router';
 
-const router = createRouter({ history: createWebHashHistory(), routes });
+const app = createApp(App).use(IonicVue).use(router);
 
-const app = createApp(App);
-
-app.use(router);
-
-app.mount('#app');
+router.isReady().then(() => {
+  app.mount('#app');
+});

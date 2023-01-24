@@ -2,10 +2,14 @@
 export default { name: 'HomePage' };
 </script>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { IonPage } from '@ionic/vue';
+</script>
 
 <template>
-  <div>Home Page</div>
+  <ion-page>
+    <div>Home Page</div>
+  </ion-page>
 </template>
 
 <style scoped></style>

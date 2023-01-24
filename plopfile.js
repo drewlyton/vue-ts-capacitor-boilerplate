@@ -47,7 +47,7 @@ export default function (
       },
       {
         type: 'append',
-        path: 'src/routes/routes.ts',
+        path: 'src/router/routes.ts',
         pattern: 'FOR_PLOP: LayoutImports',
         templateFile: 'templates/layout.import.hbs',
       },
@@ -92,13 +92,13 @@ export default function (
       },
       {
         type: 'append',
-        path: 'src/routes/routes.ts',
+        path: 'src/router/routes.ts',
         pattern: 'FOR_PLOP: PageImports',
         templateFile: 'templates/page.import.hbs',
       },
       {
         type: 'append',
-        path: 'src/routes/routes.ts',
+        path: 'src/router/routes.ts',
         pattern: 'FOR_PLOP: Pages',
         templateFile: 'templates/route.hbs',
       },
