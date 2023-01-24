@@ -1,5 +1,10 @@
-import
-{{pascalCase name}}
-from './{{pascalCase name}}.vue'; import { mount } from '@vue/test-utils';
-describe('{{pascalCase name}}.vue', () => { it('Should render', () => {
-expect(mount({{pascalCase name}}).html()).toBeTruthy(); }); });
+import {{pascalCase name}} from './{{pascalCase name}}.vue';
+import { render } from '@testing-library/vue'
+
+
+describe('{{pascalCase name}}.vue', () => {
+  it('Should render', () => {
+    const { getByText } = render({{pascalCase name}})
+    expect(getByText('{{pascalCase name}}')).toBeTruthy();
+  });
+});

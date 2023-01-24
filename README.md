@@ -1,18 +1,95 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript Stack for Mobile Apps
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This template is designed for speedy development of a new Capacitor project that uses Vue 3 and Typescript. It comes with the essentials for a speedy development workflow including:
+
+- Development tooling powered by [Vite](https://vitejs.dev/)
+- Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
+- Code formatting with [Prettier](https://prettier.io)
+- Linting with [ESLint](https://eslint.org)
+- Static Types with [TypeScript](https://typescriptlang.org)
+- Native plugins with Capacitor
+- Native UI Styling with Ionic
+- Additional styling with [Tailwind](https://tailwindcss.com/)
+- State management with [Pinia](https://pinia.vuejs.org/)
+- Routing with [VueRouter](https://router.vuejs.org/)
+- Generators using [Plop](https://plopjs.com/)
+- CI using GithubActions
 
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Other recommended extensions in `.vscode` folder
 
-## Type Support For `.vue` Imports in TS
+---
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Getting started
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Install Node 18 using `nvm`:
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+```sh
+nvm i
+```
+
+Install dependencies using npm:
+
+```sh
+npm i
+```
+
+Start the dev server:
+
+```
+npm run dev
+```
+
+---
+
+## Building
+
+### For Web
+
+```
+npm run build
+```
+
+### For iOS
+
+```
+npm run build:ios
+```
+
+### For Android
+
+```
+npm run build:android
+```
+
+---
+
+## Generators
+
+I've setup a series of Plop generators for easily creating Components, Pages, and Templates. Check them out using:
+
+```sh
+npm run generate # or just 'g' for short
+```
+
+---
+
+## Testing
+
+### Vitest
+
+For lower level tests of utilities and individual components, we use Vitest. You can start the testing server by using `npm run test`.
+
+### Type Checking
+
+This project uses TypeScript. It's recommended to get TypeScript set up for your editor to get a really great in-editor experience with type checking and auto-complete. To run type checking across the whole project, run `npm run typecheck`.
+
+### Linting
+
+This project uses ESLint for linting. That is configured in `.eslintrc.js`.
+
+### Formatting
+
+We use Prettier for auto-formatting in this project. It's recommended to install an editor plugin (like the VSCode Prettier plugin) to get auto-formatting on save. There's also a `npm run format` script you can run to format all files in the project.

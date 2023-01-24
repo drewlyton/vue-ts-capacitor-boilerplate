@@ -5,8 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "ios": "npx cap run ios",
+    "android": "npx cap run android",
     "build": "vue-tsc && vite build",
+    "build:ios": "npx cap sync ios && npx cap build ios",
+    "build:android": "npx cap sync android && npx cap build android",
     "preview": "vite preview",
+    "g": "plop",
     "generate": "plop",
     "test": "vitest"
   },
@@ -23,10 +28,10 @@
   },
   "devDependencies": {
     "@pinia/testing": "^0.0.14",
+    "@testing-library/vue": "^6.6.1",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/test-utils": "^2.2.7",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",

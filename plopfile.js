@@ -20,12 +20,12 @@ export default function (
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.test.ts',
-        templateFile: 'templates/name.test.hbs',
+        templateFile: 'templates/component.test.hbs',
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/index.ts',
-        templateFile: 'templates/name.index.hbs',
+        templateFile: 'templates/component.index.hbs',
       },
     ],
   });
