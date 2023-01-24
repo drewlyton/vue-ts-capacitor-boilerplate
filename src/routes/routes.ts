@@ -1,4 +1,6 @@
+// FOR_PLOP: LayoutImports
 import MainLayout from 'layouts/MainLayout.vue';
+// FOR_PLOP: PageImports
 import HomePage from 'pages/HomePage.vue';
 import { RouteRecordRaw } from 'vue-router';
 
@@ -7,8 +9,6 @@ export const routes: RouteRecordRaw[] = [
     path: '/',
     component: MainLayout,
     redirect: () => {
-      // the function receives the target route as the argument
-      // we return a redirect path/location here.
       return { name: 'Home' };
     },
     children: [
@@ -19,4 +19,5 @@ export const routes: RouteRecordRaw[] = [
       },
     ],
   },
+  // FOR_PLOP: Pages
 ];
