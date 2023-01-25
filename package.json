@@ -13,7 +13,9 @@
     "preview": "vite preview",
     "g": "plop",
     "generate": "plop",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "tsc",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@capacitor/android": "^4.6.2",
