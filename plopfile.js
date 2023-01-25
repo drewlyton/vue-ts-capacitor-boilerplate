@@ -78,17 +78,17 @@ export default function (
       {
         type: 'add',
         path: 'src/pages/{{pascalCase name}}Page/{{pascalCase name}}Page.vue',
-        templateFile: 'templates/component.hbs',
+        templateFile: 'templates/page.hbs',
       },
       {
         type: 'add',
         path: 'src/pages/{{pascalCase name}}Page/{{pascalCase name}}Page.test.ts',
-        templateFile: 'templates/component.test.hbs',
+        templateFile: 'templates/page.test.hbs',
       },
       {
         type: 'add',
         path: 'src/pages/{{pascalCase name}}Page/index.ts',
-        templateFile: 'templates/component.index.hbs',
+        templateFile: 'templates/page.index.hbs',
       },
       {
         type: 'append',

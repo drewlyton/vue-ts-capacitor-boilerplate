@@ -1,0 +1,21 @@
+<script lang="ts">
+export default { name: '{{pascalCase name}}Page' };
+</script>
+
+<script setup lang="ts">
+import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+</script>
+
+<template>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>{{pascalCase name}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding" fullscreen>
+    <div>{{pascalCase name}} Page</div>
+  </ion-content>
+</template>
+
+<style scoped></style>

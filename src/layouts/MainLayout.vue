@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { IonPage, IonRouterOutlet } from '@ionic/vue';
+</script>
 
 <template>
-  <div class="bg-slate-200 h-screen">
-    <router-view />
-  </div>
+  <ion-page>
+    <ion-router-outlet />
+  </ion-page>
 </template>

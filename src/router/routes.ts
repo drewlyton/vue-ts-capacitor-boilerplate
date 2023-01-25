@@ -1,7 +1,7 @@
 // FOR_PLOP: LayoutImports
 import MainLayout from 'layouts/MainLayout.vue';
 // FOR_PLOP: PageImports
-import HomePage from 'pages/HomePage.vue';
+import HomePage from 'pages/HomePage';
 import { RouteRecordRaw } from 'vue-router';
 
 export const routes: RouteRecordRaw[] = [

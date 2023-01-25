@@ -1,0 +1,10 @@
+import {{pascalCase name}}Page from './{{pascalCase name}}Page.vue';
+import { render } from '@testing-library/vue'
+
+
+describe('{{pascalCase name}}Page', () => {
+  it('Should render', () => {
+    const { getByText } = render({{pascalCase name}}Page)
+    expect(getByText('{{pascalCase name}} Page')).toBeTruthy();
+  });
+});
