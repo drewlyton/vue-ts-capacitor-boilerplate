@@ -21,7 +21,8 @@
       "pages/*": ["src/pages/*"],
       "assets/*": ["src/assets/*"],
       "stores/*": ["src/stores/*"],
-      "types/*": ["src/types/*"]
+      "types/*": ["src/types/*"],
+      "modules/*": ["node_modules/*"]
     },
     "types": ["vitest/globals"]
   },
