@@ -1,6 +1,6 @@
 # Vue 3 + TypeScript Stack for Mobile Apps
 
-This template is designed for speedy development of a new Capacitor project that uses Vue 3 and Typescript. It comes with the essentials for a speedy development workflow including:
+This template is designed to quickly get up and running with a new Capacitor project that uses Vue 3 and Typescript. It comes with the essentials for a speedy development workflow including:
 
 - Development tooling powered by [Vite](https://vitejs.dev/)
 - Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
