@@ -11,6 +11,7 @@ This template is designed for speedy development of a new Capacitor project that
 - Native UI Styling with [Ionic](https://ionicframework.com/docs/)
 - Additional styling with [Tailwind](https://tailwindcss.com/)
 - State management with [Pinia](https://pinia.vuejs.org/)
+- Date fetching with [swrv](https://docs-swrv.netlify.app/)
 - Routing with [VueRouter](https://router.vuejs.org/)
 - Generators using [Plop](https://plopjs.com/)
 - CI using GithubActions
